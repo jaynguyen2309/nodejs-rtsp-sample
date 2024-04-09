@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div>
+      <button onclick="startVideo()">Start</button>
+      <button onclick="stopVideo()">Stop</button>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="./jsmpeg.min.js"></script>
+  <script type="text/javascript">
+    let player;
+
+    function startVideo() {
+      player = new JSMpeg.Player("ws://localhost:9999", {
+        canvas: document.getElementById("canvas"),
+        audio: true,
+        loop: true,
+        autoplay: true,
+      });
+    }
+
+    function stopVideo() {
+      if (player) {
+        player.destroy();
+        player = null;
+      }
+    }
+  </script>
+</html>
