@@ -1,6 +1,12 @@
 {
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "html": "^1.0.0",
+    "http": "^0.0.1-security",
     "jsmpeg": "^1.0.0",
-    "node-rtsp-stream": "^0.0.9"
+    "node-onvif": "^0.1.7",
+    "node-rtsp-stream": "^0.0.9",
+    "onvif": "^0.7.0",
+    "xml2js": "^0.6.2"
   }
 }
