@@ -5,7 +5,7 @@ require("dotenv").config();
 const CAMERA_HOST = process.env.CAMERA_HOST || "";
 const USERNAME = process.env.USERNAME || "";
 const PASSWORD = process.env.PASSWORD || "";
-const PORT = 90;
+const PORT = 80;
 const RTSP_PORT = 554;
 
 const initCamera = () => {
